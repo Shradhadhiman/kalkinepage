@@ -12,7 +12,7 @@ export default function Filter() {
 <div className="container-fluid">
         <div className="container">
           <Row>
-            <Col span={5}>
+            <Col xs={24} sm={14} md={5}>
 
               <div className="background_color">
                 <div className="compantselect_filter">
@@ -302,7 +302,7 @@ export default function Filter() {
                 </div>
               </div>
             </Col>
-            <Col span={19}>
+            <Col xs={8} sm={19} md={19}>
               <Row>
                 <Col span={12}>
                   <div className="pignation">
@@ -334,6 +334,7 @@ export default function Filter() {
               <Row>
                 {/* <Col span={19}> */}
                   <div className="company">
+                    <div class="table-responsive">
                     <table className="screener_table">
                       <thead>
                         <tr>
@@ -774,6 +775,7 @@ export default function Filter() {
                           </tr>
                       </tbody>
                     </table>
+                    </div>
                     </div>
                 {/* </Col> */}
               </Row>

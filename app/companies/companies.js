@@ -1,5 +1,11 @@
 import React from "react";
 import { Row, Col } from "antd";
+import Image from "next/image";
+import Screener from "../../public/static/image/momentum-screener.jpeg"
+import Growth from "../../public/static/image/growth-screener.jpeg"
+import Cash from "../../public/static/image/cash-flow-screener.jpeg"
+import More from "../../public/static/image/arrowicons.jpeg"
+import Profit from "../../public/static/image//profit.jpeg"
 import "./companies.css";
 
 export default function Companies() {
@@ -8,7 +14,7 @@ export default function Companies() {
       <div className="container-fluid">
         <div className="container">
           <Row>
-            <Col span={17} >
+            <Col xs={24} sm={24} md={16} >
               <div className="company_hrading">
                 <p className="breadcrumbs">
                   <a href="/">Home</a>»<span>Companies</span>
@@ -20,34 +26,34 @@ export default function Companies() {
                 <ul className="image_banner">
                   <li>
                     <a target="_blank" href="/screeners/momentum-screener">
-                      <img src="/static/image/momentum-screener.jpeg" alt="gainers"/>
+                      <Image src={Screener}/>
                       Momentum Screener
                     </a>
                   </li>
                   <li>
                     <a target="_blank" href="/screeners/growth-screener">
-                      <img src="/static/image/growth-screener.jpeg "alt="losers"/>
+                      <Image src={Growth}/>
                       Growth Screener
                     </a>
                   </li>
                   <li>
                     <a target="_blank" href="/screeners/cash-flow-screener">
-                      <img src="/static/image/cash-flow-screener.jpeg" alt="screener"/>
+                      <Image src={Cash}/>
                       Cash Flow Screener
                     </a>
                   </li>
                   <li>
                     <a target="_blank" href="/pricing/">
-                      <img src="/static/image/arrowicons.jpeg" alt="more"/>
+                      <Image src={More}/>
                       More
                     </a>
                   </li>
                 </ul>
               </div>
             </Col>
-            <Col span={7}>
+            <Col xs={8} sm={16} md={8} >
              <div className="banner_images">
-              <img src="/static/image/profit.jpeg"/>
+              <Image src={Profit}/>
              </div>
             </Col>
           </Row>
