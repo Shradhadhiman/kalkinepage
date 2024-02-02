@@ -1,0 +1,88 @@
+.home {
+    background-image: linear-gradient(108deg,#c8d6f0 20% ,#ecf2fe 45%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+    margin-bottom: 0rem;
+    list-style: none;
+}
+p.breadcrumbs a {
+    color: #0d6efd;
+    text-decoration: underline;
+
+}
+p.breadcrumbs{
+font-size: 15px;
+}
+.company_heading h1 {
+    color: #0354d6;
+    font-weight: 600;
+    font-size: 36px;
+}
+p.investore {
+    font-size: 15px;
+}
+.company_hrading h1 {
+    color: #0354d6;
+    font-size: 31px;
+}
+ul.image_banner {
+    /* padding: 0px 11vw; */
+    padding-left: 0px;
+    list-style: none;
+    width: 100%;
+    float: left;
+}
+ul.image_banner li {
+    min-height: auto;
+    transition: all .3s ease 0s;
+    display: inline-block;
+    padding: 11px 14px;
+    border-radius: 120px;
+    background-color: #fff;
+    margin: 6px 4px 20px;
+}
+ul.image_banner li a {
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 15px;
+}
+ul.image_banner img {
+    max-width: 27px;
+    height: 20px;
+    margin-right: 5px;
+}
+.banner_images img {
+    max-height: 300px;
+    width: 100%;
+}
+/* @media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+p.breadcrumbs{
+    font-size: 11px;
+}
+.company_heading h1 {
+    color: #0354d6;
+    font-weight: 600;
+    font-size: 23px;
+    padding-top: 6px;
+}
+p.investore {
+    font-size: 12px;
+}
+.banner_images img {
+    display: none;
+}
+
+}
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+    p.breadcrumbs{
+     font-size: 9px;
+        
+    }
+} */

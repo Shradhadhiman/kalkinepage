@@ -1,0 +1,135 @@
+.backbody {
+    background: linear-gradient(45deg, #fff2bd, #f4d58c);
+}
+.second_content
+{
+    padding: 24px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.second_contents{
+    justify-content: center;
+    display: flex;
+}
+.second_content_data {
+    width: 95%;
+    background: #001563;
+    float: right;
+    padding: 20px;
+    border-radius: 10px;
+}
+.bannerfluid{
+    background-repeat: no-repeat;
+   
+} 
+.datascience_reserch h4{
+    color: #2e2e2e;
+    font-size: 32px;
+    font-weight: 400;
+}
+.datascience_reserch{
+    padding-top: 5px;
+    padding-bottom: 40px;
+    background: linear-gradient(45deg, #fff2bd, #f4d58c);
+}
+
+.second_content h2 {
+    /* margin-bottom: 30px !important; */
+    font-size: 51px !important;
+    color: #f26936 !important;
+    font-weight: 700 !important;
+}
+.second_content h3 {
+    color: #2e2e2e;
+    font-size: 32px;
+    font-weight: 400;
+}
+.second_content p {
+    margin-top: 15px;
+    font-size: 20px !important;
+}
+.second_content p strong {
+    font-weight: bolder;
+}
+.datascience_reserch h2{
+    margin-bottom: 23px;
+    font-size: 30px;
+    color: #f26936;
+    font-weight: bold;
+}
+.second_content_data {
+    margin-right: 25px;
+    margin-top: 20px;
+    width: 90%;
+    background: #001563;
+    float: right;
+    /* padding: 22px; */
+    border-radius: 10px;
+}
+.second_content_data h2 {
+    color: #fff !important;
+    font-size: 25px !important;
+    text-align: center;
+}
+.borders{
+    border-right: none !important;
+}
+table.price_data tr {
+    color: #fff;
+}
+table.price_data button {
+    background-color: #f26936;
+    text-align: center;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 1px 17px;
+    color: rgb(255 253 253);
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+}
+table.price_data.table-sm td {
+    text-align: center;
+    border-bottom: 1px solid rgb(120 113 113/50%);
+}
+table.price_data.table-sm th {
+    border-bottom: 1px solid rgb(120 113 113/50%);
+    padding: 0 6px;
+    text-align: center;
+    font-size: 14px;
+
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p.para {
+    margin-top: 15px;
+    /* text-align: center; */
+    color: white;
+    line-height: 19px;
+    font-size: 15px;
+} 
+.datareasearch_anchor {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.datareasearch_anchor a {
+    background-color: #f26936;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    padding: 14px 30px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.slick-track{
+    margin-top: -7px;
+}

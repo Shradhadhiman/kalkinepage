@@ -1,0 +1,79 @@
+.back_body{
+    background: linear-gradient(45deg, #fff2bd, #f4d58c);
+}
+.myimage{
+  width: 100%;
+  height: 100%; 
+}
+.bannerdiv{
+    float: left;
+    width: 100%;
+    display: contents;
+} 
+.box_design .btn_navs {
+    float: left;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+}
+button.btn-prev {
+    /* left: -16px;
+    position: absolute; */
+    width: 39px;
+    height: 39px;
+    background-color: rgb(222, 227, 255) !important;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 120px;
+    /* width: 37px;
+    height: 37px; */
+}
+.left-btn img{
+    z-index: 2;
+    transform: rotate(180deg);
+    position: relative;
+    left: -29px;
+}
+.left-btn{
+    display: flex; 
+    /* justify-content: center; */
+    /* align-items: center; */
+     float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}    
+.right-btn{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_design .right-btn img{
+    position: relative;
+    z-index: 2;
+    left: -13px;
+}
+.box_design button.btn-next {
+    right: 7px;
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    background-color: rgb(222, 227, 255) !important;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 120px;
+}
+.button.btn-next img{
+    z-index: 2;
+    transform: rotate(180deg);
+    position: relative;
+    left: -10px;
+}
+.slick-slide{
+    margin-bottom: -7px;
+}
+:where(.css-dev-only-do-not-override-zl9ks2).ant-carousel .slick-next {
+    inset-inline-end: 0px;
+}
+
+

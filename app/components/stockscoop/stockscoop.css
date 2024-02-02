@@ -1,0 +1,63 @@
+.scoopdata_content {
+    padding: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* margin-left: 20px; */
+    padding: 25px; 
+}
+.scoopdata_content h4 {
+    font-size: 33px;
+    font-weight: 700;
+    color: #0354d6;
+    margin-bottom: 0.5rem;
+}
+.scoopdata_content h2 {
+    font-size: 53px;
+    font-weight: 700;
+    color: #001464;
+    margin-bottom: 0.5rem;
+}
+.stockscoop_anchor {
+    text-align: center;
+    float: left;
+    width: 36%; 
+    margin-top: 22px;
+    height: auto;
+
+} 
+.stockscoop_anchor a {
+    background-color: #0021a4;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 14px 30px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.scoopdata_content h6{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.scoopdata_content p {
+    font-size: 18px;
+}
+ul.scoopul_content {
+    display: inline flex;
+    float: left;
+    padding-left: 0px;
+    text-align: center;
+    margin-left: -15px;
+}
+ul.scoopul_content li span {
+    color: #4aa3f1;
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+}
+ul.scoopul_content li {
+    border-right: 1px solid #4aa3f1;
+    padding: 0 18px;
+    font-weight: 700;
+    list-style: none;
+}
