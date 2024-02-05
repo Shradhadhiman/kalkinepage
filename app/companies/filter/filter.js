@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, } from "antd";
+import { Row, Col, Pagination, } from "antd";
 import { Button } from "antd";
 import Icon, { ArrowDownOutlined, ArrowUpOutlined } from '@ant-design/icons';
 import "./filter.css";
@@ -12,12 +12,20 @@ export default function Filter() {
 <div className="container-fluid">
         <div className="container">
           <Row>
-            <Col xs={24} sm={14} md={5}>
-
-              <div className="background_color">
+            <Col xs={24} sm={24} md={5}>
+            {/* <div className="companyleft_nav">
+                  <div className="filterleftbar">
+                    <form id="filter-form">
+                      <div className="filterbutton">
+                      <h2 class="filtrationtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; openNavFilter()">
+                      <FaFilter/>
+                        Filters
+                        </h2> */}
+                <div className="background_color">
+                
                 <div className="compantselect_filter">
                   <h5 className="sidebar_title slidebar_titles">
-                    <FaFilter />
+                    <FaFilter/>
                     Filters
                   </h5>
                 <div className="filters">
@@ -300,11 +308,16 @@ export default function Filter() {
                   </ul>
                 </div>
                 </div>
-              </div>
+                </div>
+                {/* </div>
+                </form>
+                </div>
+                </div> */}
+              
             </Col>
-            <Col xs={8} sm={19} md={19}>
+            <Col xs={24} sm={19} md={19}>
               <Row>
-                <Col span={12}>
+                <Col md={8}>
                   <div className="pignation">
                     <div className="selects_row">
                       <label>Per Page</label>
@@ -318,15 +331,16 @@ export default function Filter() {
                     </div>
                   </div>
                 </Col>
-                <Col span={12}>
-                  <div style={{ display: 'flex', flexDirection: "row" , float: "right" }}>
+                <Col xs={24} sm={24} md={16}>
+                  <div className="search_container">
 
                     <div className="search_item">
                       <input type="text" name="search_term" id="search_term" placeholder="Search stocks..." onchange="if (!window.__cfRLUnblockHandlers) return false; updateTable(1)" />
-                      <Button className="sumit" type="Search">Search</Button>
+                      <Button className= "sumit" type="Search">Search</Button>
                     </div>
                     <div className="pignations">
-                      <Button className="change" type onclick="updateTable(2)">Next</Button>
+                      {/* <Button className=" btn btn-outline-primary btn-sm change" type onclick="updateTable(3)">Previous</Button> */}
+                      <Button className=" btn btn-outline-primary btn-sm change" type onclick="updateTable(2)">Next</Button>
                     </div>
                   </div>
                 </Col>
@@ -778,6 +792,10 @@ export default function Filter() {
                     </div>
                     </div>
                 {/* </Col> */}
+             
+                
+                <p className="disclaimer"><strong>Disclaimer - </strong> Data Powered by EOD Historical Data (“EODHD”). All CFDs (stocks, indices, mutual funds, ETFs), and Forex are not provided by exchanges but rather by market makers, and so prices may not be accurate and may differ from the actual market price, meaning prices are indicative and not appropriate for trading purposes. EODHD is not using exchanges data feeds for the pricing data, EODHD is using OTC, peer to peer trades and trading platforms over 100+ sources, EODHD is aggregating its data feeds via VWAP method. Therefore, EOD Historical Data doesn’t bear any responsibility for any trading losses you might incur as a result of using this data. EOD Historical Data or anyone involved with EOD Historical Data will not accept any liability for loss or damage as a result of reliance on the information including data, quotes, charts and buy/sell signals contained within this website. Please be fully informed regarding the risks and costs associated with trading the financial markets, it is one of the riskiest investment forms possible. EOD Historical Data does not give any warranties (including, without limitation, as to merchantability or fitness for a particular purpose or use).</p>
+                
               </Row>
             </Col>
            

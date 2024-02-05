@@ -10,6 +10,11 @@
     border-radius: 4px;
     margin-top: 0;
 }
+.search_container{
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
 h5.sidebar_title {
     color: #fff;
     border-bottom: 1px solid #fff;
@@ -125,7 +130,8 @@ input.input-min:focus {
     box-shadow: 0 0 0 2px #f58533;
     border-radius: 50%;
     cursor: pointer;
-    transition: inset-inline-start 0.2s,inset-block-start 0.2s,width 0.2s,height 0.2s,box-shadow 0.2s;
+    transition: inset-inline-start 0.2s,
+    inset-block-start 0.2s,width 0.2s,height 0.2s,box-shadow 0.2s;
 }
 .image_text ul {
     width: 100%;
@@ -186,9 +192,8 @@ span.total_row {
     font-size: 18px;
 }
 .search_item {
-    padding: 0px 0px 7px 8px;
+    padding:10px;
     margin-top: 30px;
-    /* padding: 5px 10px; */
     border: solid 1px rgb(0 20 100);
     background-color: #fff;
     font-size: 16px;
@@ -197,6 +202,18 @@ span.total_row {
     border-radius: 30px!important;
     width: auto;
     min-width: 250px;
+    position:relative;
+}
+button.ant-btn.css-dev-only-do-not-override-zl9ks2.ant-btn-Search.sumit {
+    position: absolute;
+    top: 6px;
+    border-radius: 120px;
+    font-size: 18px;
+    right: 8px;
+    width: 75px;
+    padding: 2px 5px;
+    background-color: #2254d6;
+    color: #fff;
 }
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -209,19 +226,12 @@ input[type=range]::-webkit-slider-thumb {
     position: relative;
     z-index: 10000;
   }
-.search_item input {
+  .search_item input {
     border: none;
+    width: calc(100% - 75px);
 }
-button.ant-btn.ant-btn-Search span {
-    border-radius: 120px;
-    font-size: 18px;
-    /* position: absolute; */
-    right: 3px;
-    width: 75px;
-    padding: 2px 5px;
-    background-color: #2254d6;
-    color: #fff;
-    top: 1px;
+.search_item input:focus{
+    outline:none;
 }
 .pignations {
     margin-top: 31px;
@@ -306,12 +316,11 @@ td.content-end {
     text-align: right !important;
 }
 
-
-
-
-
-
-
+:where(.css-dev-only-do-not-override-zl9ks2).ant-slider-horizontal .ant-slider-rail {
+    background: #ddd;
+    width: 100%;
+    height: 4px;
+}
 
 td.stocks_color a {
     color: #0254d6;
@@ -355,3 +364,48 @@ table.screener_table tr {
 tbody.list_item tr:hover {
     background-color: #ecf2fe;
 }
+p.disclaimer {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+@media (max-width: 576px) {
+    .search_container{
+        float: none !important;
+        flex-direction: column;
+    }
+    .search_item {
+        max-width: 100%;
+    }
+}
+    @media (max-width: 412px) { 
+        .selects_row {
+            padding-left: 0px;
+            margin-bottom: 0pxpx;
+            align-items: center;
+        }
+        .search_item{
+            margin-top: 0px;
+            font-size: 10px;
+        }
+        button.ant-btn.css-dev-only-do-not-override-zl9ks2.ant-btn-Search.sumit{
+            top: 2px;
+            font-size: 16px;
+            right: 4px;
+        }
+        button.change{
+            float: right;
+            height: 35px;
+        }
+        .pignations {
+            margin-top: 12px;
+        }
+        .company {
+            margin-top: 10px;
+            padding-left: 0px;
+        }
+        p.disclaimer{
+            padding-left: 0px;
+        }
+    }
+
+  
